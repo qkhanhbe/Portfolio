@@ -77,9 +77,29 @@
             </div>
         </div>
         <div class="hero-visual">
-            <div class="profile-container">
-                <img src="profile.jpg" alt="Quoc Khanh Be" class="profile-img">
-                <div class="profile-border"></div>
+            <div class="code-block-container">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">profile.py</span>
+                </div>
+                <pre class="code-content"><code><span class="keyword">class</span> <span class="class-name">Developer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.name = <span class="string">"Quoc Khanh Be"</span>
+        <span class="param">self</span>.role = <span class="string">"AI Developer"</span>
+        <span class="param">self</span>.education = <span class="string">"PTIT"</span>
+        <span class="param">self</span>.skills = [
+            <span class="string">"Python"</span>, <span class="string">"Java"</span>,
+            <span class="string">"Machine Learning"</span>,
+            <span class="string">"Data Analysis"</span>
+        ]
+        <span class="param">self</span>.ielts = <span class="number">7.0</span>
+
+    <span class="keyword">def</span> <span class="function">current_work</span>(<span class="param">self</span>):
+        <span class="keyword">return</span> <span class="string">"LLM Prompt Engineer @ PTalk"</span></code></pre>
                 <div class="floating-tag tag-1"><i class="fas fa-brain"></i> AI/ML</div>
                 <div class="floating-tag tag-2"><i class="fas fa-microphone"></i> ASR</div>
                 <div class="floating-tag tag-3"><i class="fas fa-comment-dots"></i> LLM</div>
