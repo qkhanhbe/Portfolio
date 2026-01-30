@@ -3,250 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quoc Khanh | AI Developer</title>
+    <title>Quoc Khanh - AI Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Cursor Effect -->
-    <div class="cursor-glow" id="cursor-glow"></div>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">QK<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="mobile-toggle" id="mobile-toggle">
-                <i class="fas fa-bars"></i>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <span class="logo-bracket">{</span>QK<span class="logo-bracket">}</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero" id="home">
-        <div class="hero-particles" id="particles"></div>
-        <div class="hero-container">
-            <div class="hero-text">
-                <span class="greeting">Hello, I'm</span>
-                <h1 class="name">Quoc Khanh</h1>
-                <div class="title-wrapper">
-                    <span class="title-static">I'm a </span>
-                    <span class="title-dynamic" id="typed-text"></span>
-                    <span class="cursor">|</span>
-                </div>
-                <p class="tagline">
-                    Third-year IT student at PTIT passionate about AI, Machine Learning & Data Analysis. 
-                    Currently working on ASR and LLM projects.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary">
-                        <i class="fas fa-rocket"></i> View My Work
-                    </a>
-                    <a href="#contact" class="btn secondary">
-                        <i class="fas fa-envelope"></i> Contact Me
-                    </a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/qkhanhbe" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:quockhanhbe@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:+84985519468"><i class="fas fa-phone"></i></a>
-                </div>
+        <div class="hero-content">
+            <div class="hero-tag">
+                <span class="tag-dot"></span>
+                <span>Available for Internship</span>
             </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <div class="avatar-placeholder">
-                        <i class="fas fa-user"></i>
+            <h1 class="glitch" data-text="Quoc Khanh">Quoc Khanh</h1>
+            <div class="typewriter">
+                <span class="static-text">&gt; </span>
+                <span class="dynamic-text" id="typewriter"></span>
+                <span class="cursor-blink">_</span>
+            </div>
+            <p class="hero-desc">
+                Third-year IT student at PTIT specializing in <span class="highlight">Artificial Intelligence</span>, 
+                <span class="highlight">Machine Learning</span> & <span class="highlight">Data Analysis</span>
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-neon">
+                    <span>View Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn-outline">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/qkhanhbe" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:quockhanhbe@gmail.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+84985519468" title="Phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot-red"></span>
+                        <span class="dot-yellow"></span>
+                        <span class="dot-green"></span>
                     </div>
-                    <div class="image-border"></div>
+                    <span class="terminal-title">about_me.py</span>
                 </div>
-                <div class="floating-card card-1">
-                    <i class="fas fa-brain"></i>
-                    <span>AI/ML</span>
-                </div>
-                <div class="floating-card card-2">
-                    <i class="fas fa-microphone"></i>
-                    <span>ASR</span>
-                </div>
-                <div class="floating-card card-3">
-                    <i class="fas fa-comment-dots"></i>
-                    <span>LLM</span>
+                <div class="terminal-body">
+                    <pre><code><span class="py-keyword">class</span> <span class="py-class">Developer</span>:
+    <span class="py-keyword">def</span> <span class="py-func">__init__</span>(self):
+        self.name = <span class="py-str">"Quoc Khanh"</span>
+        self.role = <span class="py-str">"AI Developer"</span>
+        self.school = <span class="py-str">"PTIT"</span>
+        self.skills = [
+            <span class="py-str">"Python"</span>, <span class="py-str">"Java"</span>,
+            <span class="py-str">"Machine Learning"</span>,
+            <span class="py-str">"LLM"</span>, <span class="py-str">"ASR"</span>
+        ]
+        self.ielts = <span class="py-num">7.0</span>
+
+    <span class="py-keyword">def</span> <span class="py-func">say_hi</span>(self):
+        <span class="py-keyword">print</span>(<span class="py-str">"Let's build AI!"</span>)</code></pre>
                 </div>
             </div>
         </div>
-        <a href="#about" class="scroll-down">
-            <i class="fas fa-chevron-down"></i>
-        </a>
+        <div class="scroll-hint">
+            <span>Scroll Down</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">
-                <span class="num">01.</span> About Me
-            </h2>
-            <div class="about-content">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
                 <div class="about-text">
                     <p>
-                        I'm a <strong>third-year Information Technology student</strong> at Posts and Telecommunications 
-                        Institute of Technology (PTIT), with a strong focus on <strong>Artificial Intelligence</strong>.
+                        Hello! I'm a <strong>third-year IT student</strong> at Posts and Telecommunications 
+                        Institute of Technology (PTIT). I'm deeply passionate about <strong>Artificial Intelligence</strong> 
+                        and its real-world applications.
                     </p>
                     <p>
-                        I have a solid foundation in programming and data analysis, and I'm eager to participate 
-                        in real-world projects to sharpen my research skills, develop AI models, and gain 
-                        professional experience.
+                        I have a solid foundation in programming and data analysis. Currently, I'm working on 
+                        the <strong>PTalk project at PTIT</strong>, focusing on ASR (Automatic Speech Recognition) 
+                        and LLM prompt engineering.
                     </p>
                     <p>
-                        Currently, I'm working on the <strong>PTalk project at PTIT</strong>, where I focus on 
-                        ASR (Automatic Speech Recognition) and LLM prompt engineering.
+                        I'm actively seeking internship opportunities to develop AI models and gain 
+                        professional experience in the field.
                     </p>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <strong>Education</strong>
-                                <span>PTIT - IT (2023 - Present)</span>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-certificate"></i>
-                            <div>
-                                <strong>IELTS</strong>
-                                <span>7.0 (2023)</span>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-language"></i>
-                            <div>
-                                <strong>Languages</strong>
-                                <span>English, Vietnamese, Chinese (Basic)</span>
-                            </div>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="card-info">
+                            <h4>Education</h4>
+                            <p>PTIT - Information Technology</p>
+                            <span>2023 - Present</span>
                         </div>
                     </div>
-                </div>
-                <div class="about-interests">
-                    <h3>My Interests</h3>
-                    <div class="interest-tags">
-                        <span><i class="fas fa-robot"></i> Artificial Intelligence</span>
-                        <span><i class="fas fa-cogs"></i> Machine Learning</span>
-                        <span><i class="fas fa-chart-line"></i> Data Analysis</span>
-                        <span><i class="fas fa-globe"></i> Language Learning</span>
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="card-info">
+                            <h4>IELTS Score</h4>
+                            <p>Band 7.0</p>
+                            <span>2023</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-language"></i></div>
+                        <div class="card-info">
+                            <h4>Languages</h4>
+                            <p>English, Vietnamese</p>
+                            <span>Chinese (Basic)</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section class="skills" id="skills">
         <div class="container">
-            <h2 class="section-title">
-                <span class="num">02.</span> Skills & Technologies
-            </h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Programming</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Java</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">C/C++</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
-                        </div>
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2>Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-group">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="90">Python</span>
+                        <span class="skill-tag" data-level="80">Java</span>
+                        <span class="skill-tag" data-level="75">C/C++</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-brain"></i>
-                        <h3>AI / Machine Learning</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Machine Learning</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Data Analysis</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">LLM / Prompt Engineering</span>
-                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
-                        </div>
+                <div class="skill-group">
+                    <h3><i class="fas fa-brain"></i> AI / Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">EDA</span>
+                        <span class="skill-tag">LLM</span>
+                        <span class="skill-tag">ASR</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-tools"></i>
-                        <h3>Tools & Libraries</h3>
-                    </div>
-                    <div class="skill-tags-grid">
-                        <span class="tag">pandas</span>
-                        <span class="tag">matplotlib</span>
-                        <span class="tag">scikit-learn</span>
-                        <span class="tag">numpy</span>
-                        <span class="tag">Git</span>
-                        <span class="tag">MS SQL Server</span>
+                <div class="skill-group">
+                    <h3><i class="fas fa-toolbox"></i> Tools & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">pandas</span>
+                        <span class="skill-tag">matplotlib</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">numpy</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">MS SQL Server</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-users"></i>
-                        <h3>Soft Skills</h3>
-                    </div>
-                    <div class="skill-tags-grid">
-                        <span class="tag">Teamwork</span>
-                        <span class="tag">Problem Solving</span>
-                        <span class="tag">Communication</span>
-                        <span class="tag">OOP</span>
-                        <span class="tag">Data Visualization</span>
+                <div class="skill-group">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">OOP</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience -->
     <section class="experience" id="experience">
         <div class="container">
-            <h2 class="section-title">
-                <span class="num">03.</span> Experience
-            </h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Aug 2025 - Present</div>
-                    <div class="timeline-card">
-                        <div class="card-header">
-                            <h3>LLM Prompt Engineer</h3>
-                            <span class="company">PTalk Project - PTIT</span>
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2>Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="exp-timeline">
+                <div class="exp-item">
+                    <div class="exp-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3>LLM Prompt Engineer</h3>
+                                <span class="exp-company">PTalk Project - PTIT</span>
+                            </div>
+                            <span class="exp-date">Aug 2025 - Present</span>
                         </div>
-                        <p>Working on the PTalk project at PTIT, focusing on speech recognition and language models.</p>
+                        <p>Working on the PTalk project, focusing on speech recognition and language model integration.</p>
                         <ul>
                             <li>Designing and optimizing LLM prompts for conversational AI</li>
                             <li>Working with ASR (Automatic Speech Recognition) systems</li>
                             <li>Integrating LLM capabilities into the platform</li>
                             <li>Collaborating with team on AI feature development</li>
                         </ul>
-                        <div class="tech-stack">
+                        <div class="exp-tags">
                             <span>ASR</span>
                             <span>LLM</span>
                             <span>Python</span>
@@ -258,16 +259,20 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section class="projects" id="projects">
         <div class="container">
-            <h2 class="section-title">
-                <span class="num">04.</span> Featured Projects
-            </h2>
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2>Projects</h2>
+                <div class="section-line"></div>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-folder-open"></i>
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
                         <div class="project-links">
                             <a href="https://github.com/thanhtrnnn/stress-level-detection-app" target="_blank">
                                 <i class="fab fa-github"></i>
@@ -275,25 +280,29 @@
                         </div>
                     </div>
                     <h3>Stress Level Detection</h3>
-                    <p>ML application using physiological data to predict user stress levels through data processing pipeline.</p>
-                    <ul class="project-features">
-                        <li>Data preprocessing & feature extraction from physiological signals</li>
-                        <li>Training & evaluating models with hyperparameter optimization</li>
-                        <li>Model comparison based on F1, AUC metrics</li>
-                        <li>API inference deployment</li>
+                    <p>ML application using physiological data to predict stress levels with data processing pipeline for model training.</p>
+                    <ul>
+                        <li>Data preprocessing & feature extraction</li>
+                        <li>Model training with hyperparameter tuning</li>
+                        <li>Evaluation using F1, AUC metrics</li>
+                        <li>API deployment for inference</li>
                     </ul>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>scikit-learn</span>
-                        <span>pandas</span>
-                        <span>numpy</span>
+                    <div class="project-footer">
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>scikit-learn</span>
+                            <span>pandas</span>
+                        </div>
+                        <span class="project-date">Mar - Apr 2025</span>
                     </div>
-                    <div class="project-date">Mar 2025 - Apr 2025</div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-folder-open"></i>
+                <article class="project-card featured">
+                    <div class="featured-badge">Team Leader</div>
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
                         <div class="project-links">
                             <a href="https://github.com/qkhanhbe/DormManagement" target="_blank">
                                 <i class="fab fa-github"></i>
@@ -301,56 +310,65 @@
                         </div>
                     </div>
                     <h3>PTIT Dormitory Management</h3>
-                    <p>Desktop application for managing students, rooms, contracts, services and invoices using MVC architecture.</p>
-                    <ul class="project-features">
-                        <li>System architecture design & module division</li>
-                        <li>Database & ERD design with normalization</li>
+                    <p>Desktop application for managing students, rooms, contracts, services using MVC architecture.</p>
+                    <ul>
+                        <li>System architecture & module design</li>
+                        <li>Database design with ERD normalization</li>
                         <li>Full system integration & testing</li>
-                        <li>User documentation & deployment</li>
+                        <li>Documentation & deployment</li>
                     </ul>
-                    <div class="project-tech">
-                        <span>Java</span>
-                        <span>JavaFX</span>
-                        <span>MS SQL Server</span>
-                        <span>Git</span>
+                    <div class="project-footer">
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>JavaFX</span>
+                            <span>SQL Server</span>
+                        </div>
+                        <span class="project-date">Sep 2025 - Present</span>
                     </div>
-                    <div class="project-date">Sep 2025 - Present</div>
-                    <span class="project-role">Team Leader</span>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">
-                <span class="num">05.</span> Get In Touch
-            </h2>
+            <div class="section-header center">
+                <span class="section-num">05</span>
+                <h2>Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
             <div class="contact-content">
-                <p class="contact-intro">
-                    I'm currently looking for internship opportunities and collaborative projects. 
-                    Feel free to reach out if you'd like to connect!
+                <p class="contact-text">
+                    I'm currently looking for internship opportunities in AI/ML. 
+                    Whether you have a question or just want to say hi, feel free to reach out!
                 </p>
-                <div class="contact-cards">
-                    <a href="mailto:quockhanhbe@gmail.com" class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <h4>Email</h4>
-                        <span>quockhanhbe@gmail.com</span>
+                <div class="contact-grid">
+                    <a href="mailto:quockhanhbe@gmail.com" class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-info">
+                            <span class="label">Email</span>
+                            <span class="value">quockhanhbe@gmail.com</span>
+                        </div>
                     </a>
-                    <a href="tel:+84985519468" class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <h4>Phone</h4>
-                        <span>+84 985 519 468</span>
+                    <a href="tel:+84985519468" class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-info">
+                            <span class="label">Phone</span>
+                            <span class="value">+84 985 519 468</span>
+                        </div>
                     </a>
-                    <a href="https://github.com/qkhanhbe" target="_blank" class="contact-card">
-                        <i class="fab fa-github"></i>
-                        <h4>GitHub</h4>
-                        <span>github.com/qkhanhbe</span>
+                    <a href="https://github.com/qkhanhbe" target="_blank" class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div class="contact-info">
+                            <span class="label">GitHub</span>
+                            <span class="value">github.com/qkhanhbe</span>
+                        </div>
                     </a>
                 </div>
-                <a href="mailto:quockhanhbe@gmail.com" class="btn primary large">
-                    <i class="fas fa-paper-plane"></i> Send Message
+                <a href="mailto:quockhanhbe@gmail.com" class="btn-neon large">
+                    <span>Say Hello</span>
+                    <i class="fas fa-paper-plane"></i>
                 </a>
             </div>
         </div>
@@ -360,12 +378,11 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <span class="logo">QK<span>.</span></span>
-                <p>Built with passion by Quoc Khanh © 2026</p>
-                <div class="footer-links">
-                    <a href="https://github.com/qkhanhbe" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:quockhanhbe@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
+                <a href="#" class="logo">
+                    <span class="logo-bracket">{</span>QK<span class="logo-bracket">}</span>
+                </a>
+                <p>Designed & Built by Quoc Khanh</p>
+                <p class="copyright">© 2026 All Rights Reserved</p>
             </div>
         </div>
     </footer>
